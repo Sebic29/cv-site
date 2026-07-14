@@ -83,59 +83,7 @@
       </div>
 
       <div class="hero-visual reveal" aria-hidden="true">
-        <svg class="hero-graph" viewBox="0 0 420 460" xmlns="http://www.w3.org/2000/svg">
-          <!-- decorative geometric shapes -->
-          <polygon points="352,18 380,34 380,66 352,82 324,66 324,34" style="fill:none;stroke:var(--accent);stroke-width:1.5;opacity:0.3"/>
-          <polygon points="36,352 60,365 60,391 36,404 12,391 12,365" style="fill:none;stroke:var(--accent-2);stroke-width:1.5;opacity:0.25"/>
-          <rect x="8" y="150" width="24" height="24" style="fill:none;stroke:var(--border-strong);stroke-width:1.5" transform="rotate(18 20 162)"/>
-          <circle cx="392" cy="230" r="4" style="fill:var(--accent-2);opacity:0.4"/>
-          <circle cx="18" cy="60" r="4" style="fill:var(--accent);opacity:0.35"/>
-
-          <!-- connecting edges (pipeline flow) -->
-          <path d="M70 90 C 120 95, 160 130, 198 158" style="fill:none;stroke:var(--accent-2);stroke-width:2;opacity:0.45"/>
-          <path class="flow-line" d="M200 162 C 160 200, 115 230, 92 258" style="fill:none;stroke:var(--accent);stroke-width:2;opacity:0.55"/>
-          <path d="M204 162 C 245 202, 268 228, 288 256" style="fill:none;stroke:var(--accent);stroke-width:2;opacity:0.45"/>
-          <path class="flow-line" d="M292 262 C 312 292, 320 312, 328 338" style="fill:none;stroke:var(--accent-2);stroke-width:2;opacity:0.55"/>
-          <path d="M94 264 C 155 305, 245 322, 328 342" style="fill:none;stroke:var(--accent);stroke-width:2;opacity:0.3"/>
-
-          <!-- node: source (cloud) -->
-          <g transform="translate(70,88)">
-            <circle r="27" class="pulse-node" style="fill:var(--surface);stroke:var(--accent-2);stroke-width:2"/>
-            <path d="M-13,3 a8,8 0 0 1 2,-15 a10,10 0 0 1 19,-2 a7,7 0 0 1 2,15 z" style="fill:var(--accent-2);opacity:0.85"/>
-          </g>
-
-          <!-- node: processing hub -->
-          <g transform="translate(200,160)">
-            <circle r="32" style="fill:var(--surface);stroke:var(--accent);stroke-width:2.2"/>
-            <circle r="6.5" style="fill:var(--accent)"/>
-            <circle r="5.5" cx="15" cy="-11" style="fill:var(--accent);opacity:0.55"/>
-            <circle r="5.5" cx="-15" cy="11" style="fill:var(--accent);opacity:0.55"/>
-            <line x1="0" y1="0" x2="12" y2="-9" style="stroke:var(--accent);stroke-width:1.4;opacity:0.5"/>
-            <line x1="0" y1="0" x2="-12" y2="9" style="stroke:var(--accent);stroke-width:1.4;opacity:0.5"/>
-          </g>
-
-          <!-- node: database -->
-          <g transform="translate(92,262)">
-            <circle r="27" class="pulse-node" style="fill:var(--surface);stroke:var(--accent);stroke-width:2"/>
-            <ellipse cx="0" cy="-7" rx="12" ry="4" style="fill:none;stroke:var(--accent);stroke-width:1.6"/>
-            <path d="M-12,-7 v13 a12,4 0 0 0 24,0 v-13" style="fill:none;stroke:var(--accent);stroke-width:1.6"/>
-          </g>
-
-          <!-- node: transform -->
-          <g transform="translate(290,259)">
-            <circle r="25" style="fill:var(--surface);stroke:var(--accent-2);stroke-width:2"/>
-            <path d="M-7,-10 L4,0 L-7,10" style="fill:none;stroke:var(--accent-2);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round"/>
-            <path d="M1,-10 L12,0 L1,10" style="fill:none;stroke:var(--accent-2);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;opacity:0.55"/>
-          </g>
-
-          <!-- node: dashboard -->
-          <g transform="translate(330,340)">
-            <circle r="29" class="pulse-node" style="fill:var(--surface);stroke:var(--accent);stroke-width:2.2"/>
-            <rect x="-13" y="-4" width="6" height="16" rx="1.5" style="fill:var(--accent)"/>
-            <rect x="-3" y="-11" width="6" height="23" rx="1.5" style="fill:var(--accent);opacity:0.75"/>
-            <rect x="7" y="-1" width="6" height="13" rx="1.5" style="fill:var(--accent);opacity:0.5"/>
-          </g>
-        </svg>
+        <canvas class="hero-graph" id="heroCanvas"></canvas>
       </div>
     </div>
 
